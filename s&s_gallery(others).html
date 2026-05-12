@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam:wght@700&family=Architects+Daughter&family=Permanent+Marker&family=Satisfy&family=Dancing+Script:wght@700&family=Pacifico&family=Great+Vibes&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="Stylesheet" href="gallery-external-css.css">
+    <link rel="Stylesheet" href="gallery-css.css">
+    
+    <title>Sketches & Stitches</title>
+
+</head>
+<body>
+    <p class="bg"></p>
+    <div class="x-button">
+        <a href="Homepage.html"><p style="background-color: white; padding: 12px; width: 50px; height: 50px; border-radius: 50%; font-size: larger; font-family: sans-serif; color:#F096AE;"><b> X </b></p></a>
+    </div>
+
+    <div class="title">
+        <img src="image/logo.jpg" alt="pic" width="250px" style="border: 5px solid white; border-radius: 50%; display: block; margin: auto; margin-top: -50px; margin-bottom: -40px;">
+        <p style="font-size: 70px; text-align: center; color: white; font-family: dancing script;"> Crochet Gallery</p>
+    </div>
+
+    <div class="gallery">
+        <div class="category-nav">
+            <ul>
+                <a href="s&s_gallery.html"><li> All</li></a>
+                <a href="s&s_gallery(bouquet).html"><li> Bouquet</li></a>
+                <a href="s&s_gallery(amigurumi).html"><li> Amigurumi</li></a>
+                <a href="s&s_gallery(keychain).html"><li> Keychain</li></a>
+                <a href="s&s_gallery(others).html" style="background-color: #e72357;"><li> Others</li></a>
+            </ul>
+        </div>
+
+        <table>
+            <tr>
+                <td><button popovertarget="image12"><img src="image/14.jpg"  data-title="Tumbler holder"></button></td>
+                <td><button popovertarget="image13"><img src="image/15.jpg"  data-title="Tumbler holder"></button></td>
+                <td><button popovertarget="image14"><img src="image/0.png"  data-title="No Item"></button></td>
+                <td><button popovertarget="image15"><img src="image/0.png"  data-title="No Item"></button></td>
+                <td><button popovertarget="image15"><img src="image/0.png" data-title="No Item"></button></td>
+            </tr>
+            <tr>
+                <td><p> Tumbler holder </p></td>
+                <td><p> Tumbler holder </p></td>
+                <td><p> No Item </p></td>
+                <td><p> No Item </p></td>
+                <td><p> No Item  </p></td>
+            </tr>
+        </table>
+
+        </table>
+            <tr>
+                <td colspan="3"><p style="color: #F096AE; padding-bottom: 20px; font-family: sans-serif;"> @sketches&stitches</p></td>
+            </tr>
+        </table>
+        </div>
+
+
+        <!--POPUP"S-->
+    <div id="popup" class="overlay" style="display:none;" popover>
+        <div class="popup-content">
+            <div id="popupHeader">
+            <button id="closePopup">X</button>
+            <h3 id="popupTitle">Title</h3>
+            </div>
+            <img id="popupImage" src="" alt="Selected image">
+            <div class="popup-buttons">
+            <button><a href="s&s_Gallery.html">Edit</a></button>
+            <button><a href="s&s_Gallery.html">Buy</a></button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="gallery-popover.script.js"></script>
+</body>
+</html>

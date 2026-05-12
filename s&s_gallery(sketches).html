@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam:wght@700&family=Architects+Daughter&family=Permanent+Marker&family=Satisfy&family=Dancing+Script:wght@700&family=Pacifico&family=Great+Vibes&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="Stylesheet" href="gallery-external-css.css">
+    <link rel="Stylesheet" href="gallery-css.css">
+    
+    <title>Sketches & Stitches</title>
+
+</head>
+<body>
+    <p class="bg"></p>
+    <div class="x-button">
+        <a href="Homepage.html"><p style="background-color: white; padding: 12px; width: 50px; height: 50px; border-radius: 50%; font-size: larger; font-family: sans-serif; color:#F096AE;"><b> X </b></p></a>
+    </div>
+
+    <div class="title">
+        <img src="image/logo.jpg" alt="pic" width="250px" style="border: 5px solid white; border-radius: 50%; display: block; margin: auto; margin-top: -50px; margin-bottom: -40px;">
+        <p style="font-size: 70px; text-align: center; color: white; font-family: dancing script;"> Art Gallery</p>
+    </div>
+
+    <div class="gallery">
+        <div class="category-nav">
+            <ul>
+                <a href="s&s_gallery(art).html"><li> All</li></a>
+                <a href="s&s_gallery(sketches).html" style="background-color: #e72357;"><li> Sketches</li></a>
+                <a href="s&s_gallery(digital).html"><li> Digital</li></a>
+                <a href="s&s_gallery(markers).html"><li> Markers</li></a>
+                <a href="s&s_gallery(others-art).html"><li> Others</li></a>
+            </ul>
+        </div>
+        <div>
+            <table>
+            <tr>
+                <td><button popovertarget="image1"><img src="image/28.png" data-title="Illusions"></button></td>
+                <td><button popovertarget="image2"><img src="image/29.png" data-title="Red"></button></td>
+                <td><button popovertarget="image3"><img src="image/45.png" data-title="Gojo"></button></td>
+                <td><button popovertarget="image4"><img src="image/47.png" data-title="People Sketches"></button></td>
+                 <td><button popovertarget="image5"><img src="image/49.png" data-title="BJE photo card"></button></td>
+            </tr>
+            <tr>
+                <td><p> Illusions </p></td>
+                <td><p> Red </p></td>
+                <td><p> Gojo </p></td>
+                <td><p> People Sketches </p></td>
+                <td><p> BJE photo card  </p></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+               
+                <td><button popovertarget="image6"><img src="image/52.png" data-title="Group Doodle"></button></td>
+                <td><button popovertarget="image7"><img src="image/55.png" data-title="Hobbies"></button></td>
+                <td><button popovertarget="image8"><img src="image/56.png" data-title="Perspectives"></button></td>
+                <td><button popovertarget="image9"><img src="image/58.png" data-title="Tahanan"></button></td>
+                <td><button popovertarget="image9"><img src="image/0.png" data-title="No item "></button></td>
+            <tr>
+                <td><p> Group Doodle</p></td>
+                <td><p> Hobbies </p></td>
+                <td><p> Perspectives</p></td>
+                <td><p> Tahanan </p></td>
+                <td><p> No item </p></td>
+            </tr>
+        </table>
+
+            <tr>
+                <td colspan="3"><p style="color: #F096AE; padding-bottom: 20px; font-family: sans-serif;"> @sketches&stitches</p></td>
+            </tr>
+        </table>
+        </div>
+
+
+        <!--POPUP"S-->
+    <div id="popup" class="overlay" style="display:none;" popover>
+        <div class="popup-content">
+            <div id="popupHeader">
+            <button id="closePopup">X</button>
+            <h3 id="popupTitle">Title</h3>
+            </div>
+            <img id="popupImage" src="" alt="Selected image">
+            <div class="popup-buttons">
+            <button><a href="s&s_Gallery.html">Edit</a></button>
+            <button><a href="s&s_Gallery.html">Buy</a></button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="gallery-popover.script.js"></script>
+</body>
+</html>

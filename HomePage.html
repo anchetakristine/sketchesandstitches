@@ -1,0 +1,3547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketches & Stitches</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam:wght@700&family=Architects+Daughter&family=Permanent+Marker&family=Satisfy&family=Dancing+Script:wght@700&family=Pacifico&family=Great+Vibes&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body{
+        background-color: #F096AE;
+        overflow-x: clip;
+        font-family: 'Poppins', sans-serif;
+        padding: 60px;
+        padding-top: 0;
+    }
+
+    a{text-decoration: none;}
+
+    #overall-container{
+        padding: 10px;
+    }
+
+    #white-bg{
+        background-color: white;
+        border-radius: 20px;
+        height: 100%;
+        padding: 3px;
+        padding-bottom: 100px;
+        margin-top: -230px;
+    }
+
+    /*bungad starts here (pictures)*/
+
+
+    #cover-part{
+        display: block;
+        position: relative;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    #coverPic{
+        display: block;
+        width: 98%;
+        margin-top: -340px;
+        opacity: 90%;
+        z-index: -1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#logo1{
+    display:flex;
+    position: absolute;
+    bottom: -60px;
+    right: 50px;
+    border-radius: 50%;
+    width: 18%;
+    transform: translateX(-20px) translateY(-780px);
+    border: 10px solid #F096AE;
+}
+/*bungad starts here (pictures)*/
+
+/*sticking parts start here*/
+
+    #nav-wrapper {
+    position: sticky;
+    top: 0;
+    height: 80px;
+    z-index: 200;
+    display: flex;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: -80px;
+    pointer-events: none;
+    
+    /* the magic happen */
+    animation: show-bg linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 150px;  /* triggers after scroll */
+}
+
+@keyframes show-bg {
+    from { background-color: transparent; box-shadow: none; }
+    to   { background-color: white; box-shadow: 0 4px 15px rgba(240, 150, 174, 0.315); }
+}
+
+#nav-controls {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 96%;
+    justify-content: space-between;
+    padding-top: 0;
+    margin: 0 auto;
+}
+
+
+#menu {
+    width: 90px;
+    height: 60px;
+    position: sticky;
+    top: 94px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transform: translateX(1080px) translateY(-90px);
+    z-index: 201;
+    pointer-events: all;
+}
+
+#menu span {
+    display: block;
+    width: 70px;
+    height: 6px;
+    background-color: #F096AE;
+    border-radius: 2px;
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+
+#profile-sec {
+    display: flex;
+    position: sticky;
+    top: 10px;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 60px;
+    transform: translateY(5px);
+    z-index: 201;
+    pointer-events: all;
+}
+
+
+    #nav-buttons {
+    position: sticky;
+    top: -380px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    z-index: 201;
+    padding: 8px 0;
+    margin-left: 250px;
+    transform: translateY(385px);
+}
+
+#nav-buttons a {
+    box-shadow: 0px 4px 10px rgba(224, 120, 153, 0.589);
+    background-color: #F096AE;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 28px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    align-content: center;
+    pointer-events: all;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#nav-buttons a:hover {
+    background-color: #ce6183;
+    transform: scale(1.05);
+}
+
+/*sticking parts ends here*/
+
+/*offers and rules part*/
+#under-cover {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 30px 40px;
+        background-color: white;
+        margin-top: -845px;
+    }
+
+    #offers {
+        flex: 0 0 220px;
+    }
+
+    #offers .offers-box {
+        background-color: #F096AE;
+        border-radius: 40px;
+        height: 450px;
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+        width: 330px;
+        margin-left: -10px;
+    }
+
+    #offers .offers-box p {
+        margin-bottom: 16px;
+    }
+
+    #offers .offers-box ul {
+        list-style: disc;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        font-family: 'Architech Daugther', cursive;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .offer-types::before{
+        content: '<';
+    }
+
+    .offer-types::after{
+        content: '>';
+    }
+
+    .offer-types{
+        font-size: 18px;
+    }
+
+    .offer-topics{margin-bottom: 10px;}
+
+    .offers-box > h5{margin-left: 30px; font-size: 30px; margin-bottom: 10px;}
+
+    #right-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 45px;
+        gap: 20px;
+    }
+
+    #rules {
+        padding:5px;
+        width: 700px;
+        margin-left: -30px;
+        margin-top: 80px;
+    }
+
+    #rules h4 {
+        font-family: 'Permanent Marker', cursive;
+        color: #F096AE;
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    #rules h3 {
+        font-family: 'Permanent Marker', cursive;
+        color: #F096AE;
+        font-size: 25px;
+        margin-top: 16px;
+        margin-bottom: 6px;
+    }
+
+    #rules p {
+        color: #F096AE;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+/*offers and rules part*/
+
+/*Popular part start here*/
+
+#popular-part{
+    display:inline-block;
+    flex-direction: row;
+    margin-top: 20px;
+    transform: translateX(90px);
+    padding: 10px;
+}
+
+#popular-part > h3{
+    font-size: xx-large;
+    font-family: 'Fredoka One', cursive;
+    color: #F096AE;
+    margin-bottom: 15px;
+
+}
+
+.rectangle{
+    display: inline-flex;
+    position: relative;
+    flex-direction: row;
+    background-color: black;
+    width: 150px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.rectangle:hover{
+    transform: scale(1.1);
+}
+
+.rectangle img {
+    width: 100%;
+    height: 100%px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.rectangle img:hover{
+    opacity: 90%;
+}
+
+.rect-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* dark tint */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;    /* smooth fade */
+}
+
+.rect-overlay p {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+.rectangle:hover .rect-overlay {
+    opacity: 1;   /* shows on hover */
+}
+
+#gallery{
+    display:block;
+    position: absolute;
+    flex-direction: column;
+    transform: translateX(750px) translateY(-330px);
+    border-radius: 30px;
+}
+
+#gallery img{
+    display: block;
+    position: static;
+    height: 130px;
+    width: 80px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.first-box, .second-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F096AE;
+    width: 300px;
+    height: 180px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 95, 95, 0.281);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 30px;
+}
+
+.gallery-overlay p {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+.first-box:hover, .second-box:hover{
+    transform: scale(1.03);
+}
+
+.first-box:hover .gallery-overlay,
+.second-box:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/*Popular part ends here*/
+
+h6{
+    text-align: center;
+    margin-top: 150px;
+    font-size: larger;
+    color: #F096AE;
+    margin-bottom: 100px;
+}
+
+/* Products start here */
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.buttons a {
+    background-color: #F096AE;
+    color: white;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: 60px;
+    width: 140px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    box-shadow: 0px 4px 10px rgba(224, 120, 153, 0.5);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #ce6183;
+    transform: scale(1.05);
+}
+
+#promotions h1{
+    display: block;
+    color: #F096AE;
+    font-family: 'Nunito', sans-serif;
+}
+
+.boxes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* Product 1 start here */
+#box1{
+    display: block;
+    position: static;
+    background-color: #F096AE;
+    border-radius: 25px;
+    height: 450px;
+    width: 300px;
+    margin-top: -250px;
+    transform: translateX(750px);
+}
+
+#prom1 .but1{
+    display: block;
+    position: static;
+    margin-top: -60px;
+    transform: translateY(-30px) translateX(200px);
+}
+
+#prom1 h1{
+    font-size: 60px;
+    width: 50px;
+    height: 100px;
+    transform: translateX(120px);
+}
+
+#prom1 p{
+    color: #F096AE;
+    width: 450px;
+    transform: translateY(40px) translateX(120px);
+}
+/* Product 1 ends here */
+
+/* Product 2 start here */
+#box2{
+    display: block;
+    position: static;
+    border-radius: 25px;
+    height: 240px;
+    width: 250px;
+    margin-top: -60px;
+    transform: translateX(200px) translateY(10px);
+}
+
+#box2 img{
+    margin-top: -130px;
+}
+
+
+#prom2 .but2{
+    display: block;
+    position: static;
+    margin-top: -20px;
+    transform: translateY(-70px) translateX(610px);
+}
+
+#prom2 h1{
+    font-size: 40px;
+    transform: translateX(600px) translateY(50px);
+}
+
+#prom2 p{
+    color: #F096AE;
+    width: 450px;
+    transform: translateY(60px) translateX(600px);
+}
+/* Product 2 ends here */
+
+/* Product 3 start here */
+#box3{
+    display: block;
+    position: static;
+    border-radius: 25px;
+    height: 300px;
+    width: 240px;
+    margin-top: -100px;
+    transform: translateX(750px) translateY(-20px);
+}
+
+#box3 img{
+    margin-top: -80px;
+}
+
+
+#prom3 .but3{
+    display: block;
+    position: static;
+    margin-top: -20px;
+    transform: translateY(-75px) translateX(200px);
+}
+
+#prom3 h1{
+    font-size: 50px;
+    margin-top: 10px;
+    transform: translateX(150px) translateY(-5px);
+}
+
+#prom3 p{
+    color: #F096AE;
+    width: 500px;
+    transform: translateY(10px) translateX(150px);
+}
+/* Product 3 ends here */
+
+/* Product 3 start here */
+#box4{
+    display: block;
+    position: static;
+    background-color: #F096AE;
+    border-radius: 25px;
+    height: 150px;
+    width: 200px;
+    margin-top: -60px;
+    transform: translateX(180px) translateY(-100px);
+}
+
+#box4-1{
+    display: block;
+    position: static;
+    background-color: #F096AE;
+    border-radius: 25px;
+    height: 150px;
+    width: 200px;
+    margin-top: -60px;
+    transform: translateX(400px) translateY(-190px);
+}
+
+#box4-2{
+    display: block;
+    position: static;
+    background-color: #F096AE;
+    border-radius: 25px;
+    height: 150px;
+    width: 210px;
+    margin-top: -60px;
+    transform: translateX(290px) translateY(-110px);
+}
+
+
+#prom4 .but4{
+    display: block;
+    position: static;
+    margin-top: -20px;
+    transform: translateY(-180px) translateX(730px);
+}
+
+#prom4 h1{
+    font-size: 50px;
+    margin-top: 10px;
+    width: 300px;
+    transform: translateX(700px) translateY(-5px);
+}
+
+#prom4 p{
+    color: #F096AE;
+    width: 400px;
+    transform: translateY(10px) translateX(700px);
+}
+/* Product 4 ends here */
+
+/* Product 3 start here */
+#box5{
+    display: block;
+    position: static;
+    background-color: #F096AE;
+    border-radius: 25px;
+    height: 300px;
+    width: 400px;
+    /* margin-top: -60px; */
+    transform: translateX(400px) translateY(50px);
+}
+
+#prom5 .but5{
+    display: block;
+    position: static;
+    margin-top: -20px;
+    transform: translateY(70px) translateX(450px);
+}
+
+#prom5 h1{
+    font-size: 50px;
+    margin-top: -100px;
+    transform: translateX(210px);
+}
+
+#prom5 p{
+    color: #F096AE;
+    width: 500px;
+    transform: translateY(15px) translateX(210px);
+}
+/* Product 5 ends here */
+
+/* Products ends here */
+
+/* Socials starts here */
+
+#social-list{
+    margin-top: 50px;
+    display: flex;
+    position:static;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#social-list li a img{
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#social-list li a img:hover{
+    opacity: 90%;
+    transform: scale(1.05);
+}
+
+#social-list li a p{
+    color: white;
+    font-family: 'Architech Daugther', cursive;
+    text-align: center;
+}
+
+#socials h1{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    transform: scaleY(1.8) scaleX(1.5);
+    margin-bottom: 40px;
+}
+
+#socials .p{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 800px;
+    margin-bottom: 30px;
+    transform: translateX(200px);
+}
+
+/* Socials ends here  */
+
+/* Location starts here */
+
+#location{
+    display: block;
+    position: static;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px;
+    width: 700px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#loc-small-box{
+    display: block;
+    background-color: #ffabc1;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    transform: translateY(13px);
+    margin-left: 25px;
+}
+
+#loc-big-box{
+    display: block;
+    background-color: #ffabc1;
+    border-radius: 20px;
+    width: 650px;
+    height: 180px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+#loc-big-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Location ends here */
+
+/* socials of the artists starts here */
+
+#solo-social-list{
+    margin-top: 50px;
+    display: flex;
+    position:static;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#solo-social-list li a img{
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#solo-social-list li a img:hover{
+    opacity: 95%;
+    transform: scale(1.05);
+}
+
+#solo-social-list li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#solo-social-list li .member-name {
+    position: absolute;
+    bottom: -30px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Architects Daughter', cursive;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+#solo-social-list li:hover .member-name {
+    opacity: 1;
+}
+
+/* socials of the artists ends here */
+
+#more-info ul{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#more-info ul a{
+    color: white;
+    font-size: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#more-info ul a:hover{
+    transform: scale(1.05);
+}
+
+.info::after{
+    content: '';
+    display: block;
+    justify-content: center;
+    background-color: white;
+    width: 300px;
+    height: 3px;
+    margin: 0 auto;
+}
+
+#logo2{
+    display: block;
+    position: sticky;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#logo2 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#last-part{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: -10px;
+}
+
+#last-part #back{
+    margin-top: 10px;
+    color: white;
+    font-size: 23px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#last-part #back:hover{
+    transform: scale(1.05);
+}
+
+
+/* POP-UP FOR PROFILE-SEC */
+
+#profile-btn {
+    background-color: rgb(255, 245, 245);
+    border-radius: 250px;
+    width: 250px;
+    height: 40px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 10px rgba(224, 120, 153, 0.5);
+    border: none;
+    cursor: pointer;
+    color: #F096AE;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 700;
+    font-size: large;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#profile-btn:hover {
+    background-color: #fce4ec;
+    transform: scale(1.05);
+}
+
+#profile-sec img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translateY(3px);
+    box-shadow: 0px 4px 10px rgba(175, 120, 131, 0.74);
+}
+
+#profile-panel {
+    position: fixed;
+    top: 0;
+    left: -280px;         /* hidden off screen to the LEFT */
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 15px;
+    box-shadow: 4px 0 15px rgba(240, 150, 174, 0.4);
+    border-radius: 0 20px 20px 0;
+    transition: left 0.3s ease;
+}
+
+#profile-panel.open {
+    left: 0;
+}
+
+#profile-panel .panel-close {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #F096AE;
+    cursor: pointer;
+}
+
+#profile-panel .popup-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #F096AE;
+    margin-top: 10px;
+}
+
+#profile-name {
+    color: #F096AE;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.profile-panel-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.panel-btn {
+    background-color: #fff0f4;
+    color: #F096AE;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: block;
+}
+
+.panel-btn:hover {
+    background-color: #fce4ec;
+    transform: translateX(5px);
+}
+
+.panel-btn.logout {
+    color: #ce6183;
+    margin-top: 20px;
+}
+
+#profile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 499;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#profile-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+
+
+/* MENU POP-UP */
+#side-panel {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+    box-shadow: -4px 0 15px rgba(240, 150, 174, 0.4);
+    border-radius: 20px 0 0 20px;
+    transition: right 0.3s ease;
+}
+
+#side-panel.open {
+    right: 0;   /* slides in */
+}
+
+#side-panel ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#side-panel ul li a {
+    color: #F096AE;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Architects Daughter', cursive;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: block;
+}
+
+#side-panel ul li a:hover {
+    color: #ce6183;
+    transform: translateX(5px);
+}
+
+.panel-close {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #F096AE;
+    cursor: pointer;
+}
+
+/* dark overlay behind panel */
+#panel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 499;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#panel-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* MESSAGE POP-UP */
+
+.chat-box {
+    background-color: white;
+    border-radius: 30px;
+    width: 380px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.popup-overlay.active .chat-box {
+    transform: scale(1);
+}
+
+.chat-header {
+    background-color: #F096AE;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chat-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.chat-header-info {
+    flex: 1;
+}
+
+.chat-header-info h3 {
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+}
+
+.chat-status {
+    color: #fff0f4;
+    font-size: 12px;
+}
+
+.chat-header .popup-close {
+    color: white;
+    font-size: 18px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #fff5f8;
+}
+
+.chat-bubble {
+    max-width: 75%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.chat-bubble.received {
+    background-color: #F096AE;
+    color: white;
+    border-bottom-left-radius: 4px;
+    align-self: flex-start;
+}
+
+.chat-bubble.sent {
+    background-color: white;
+    color: #F096AE;
+    border: 2px solid #F096AE;
+    border-bottom-right-radius: 4px;
+    align-self: flex-end;
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    border-top: 2px solid #fce4ec;
+    background-color: white;
+    align-items: center;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: 2px solid #F096AE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #F096AE;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.chat-input-area input:focus {
+    border-color: #ce6183;
+}
+
+.chat-input-area input::placeholder {
+    color: #f4b8c8;
+}
+
+.chat-send {
+    background-color: #F096AE;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-send:hover {
+    background-color: #ce6183;
+    transform: scale(1.1);
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.popup-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #F096AE;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.popup-close:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 1024px) {
+
+    body {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    #white-bg {
+        height: auto;
+        min-height: 100vh;
+        margin-top: -100px;
+    }
+
+    /* NAV */
+    #profile-sec {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #profile-btn {
+        width: 180px;
+        font-size: 14px;
+    }
+
+    #menu {
+        width: 70px;
+        height: 50px;
+        transform: translateX(680px) translateY(-75px);
+    }
+
+    #menu:hover {
+        transform: translateX(680px) translateY(-75px) scale(1.05);
+    }
+
+    #nav-buttons {
+        gap: 15px;
+        margin-left: 100px;
+        transform: translateY(385px);
+    }
+
+    #nav-buttons a {
+        width: 130px;
+        font-size: 15px;
+        padding: 8px 14px;
+    }
+
+    /* COVER */
+    #coverPic { margin-top: -200px; }
+
+    #logo1 {
+        width: 22%;
+        transform: translateX(-15px) translateY(-500px);
+    }
+
+    /* OFFERS */
+    #under-cover {
+        flex-direction: column;
+        margin-top: -400px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #offers { flex: none; width: 100%; }
+
+    #offers .offers-box {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    #right-column {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    #rules {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /* POPULAR */
+    #popular-part {
+        transform: translateX(20px);
+        padding: 10px;
+        width: 100%;
+    }
+
+    .rectangle {
+        width: 120px;
+        height: 200px;
+        margin-right: 12px;
+    }
+
+    #gallery {
+        position: static !important;
+        transform: none !important;
+        margin-top: 20px;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .first-box, .second-box {
+        width: 100% !important;
+        height: 150px;
+    }
+
+    h6 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    /* PRODUCTS */
+    #promotions {
+        padding: 15px;
+    }
+
+    #prom1, #prom2, #prom3, #prom4, #prom5 {
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+    #prom1 h1, #prom2 h1, #prom3 h1, #prom4 h1, #prom5 h1 {
+        font-size: 30px !important;
+        transform: none !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    #prom1 p, #prom2 p, #prom3 p, #prom4 p, #prom5 p {
+        transform: none !important;
+        width: 100% !important;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    #box1, #box2, #box3, #box4, #box4-1, #box4-2, #box5 {
+        transform: none !important;
+        width: 100% !important;
+        height: 180px !important;
+        margin: 10px 0 !important;
+        border-radius: 20px !important;
+    }
+
+    #prom1 .but1, #prom2 .but2,
+    #prom3 .but3, #prom4 .but4,
+    #prom5 .but5 {
+        transform: none !important;
+        margin-top: 0 !important;
+    }
+
+    .button-group {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .buttons a {
+        width: 120px;
+        height: 50px;
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    /* SOCIALS */
+    #social-list {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    #social-list li a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #socials h1 {
+        font-size: 28px;
+        transform: none;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #socials .p {
+        width: 100%;
+        transform: none;
+        font-size: 14px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* LOCATION */
+    #location {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    #loc-small-box {
+        width: 150px;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    #loc-big-box {
+        width: 100%;
+        height: 110px;
+        margin-top: 10px;
+    }
+
+    /* SOLO SOCIALS */
+    #solo-social-list {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #solo-social-list li a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* MORE INFO */
+    #more-info ul a { font-size: 24px; }
+    .info::after { width: 220px; }
+
+    /* LOGO2 */
+    #logo2 img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* LAST PART */
+    #last-part {
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    /* CHAT */
+    .chat-box {
+        width: 85vw;
+        height: 70vh;
+    }
+
+    /* PANELS */
+    #profile-panel { width: 60%; left: -60%; }
+    #side-panel { width: 50%; right: -50%; }
+}
+
+
+@media (max-width: 767px) {
+
+    body {
+        padding: 10px;
+        padding-top: 0;
+    }
+
+    #white-bg {
+        height: auto;
+        min-height: 100vh;
+        margin-top: -50px;
+    }
+
+    /* NAV */
+    #profile-sec {
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+    #profile-btn {
+        width: 130px;
+        font-size: 12px;
+    }
+
+    #menu {
+        width: 55px;
+        height: 40px;
+        transform: translateX(290px) translateY(-60px);
+    }
+
+    #menu:hover {
+        transform: translateX(290px) translateY(-60px) scale(1.05);
+    }
+
+    #menu span { width: 40px; height: 4px; }
+
+    #nav-buttons {
+        gap: 5px;
+        margin-left: 0;
+        justify-content: center;
+        transform: translateY(385px);
+        flex-wrap: wrap;
+    }
+
+    #nav-buttons a {
+        width: 90px;
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    /* COVER */
+    #coverPic { margin-top: -80px; }
+
+    #logo1 {
+        width: 25%;
+        transform: translateX(-5px) translateY(-250px);
+    }
+
+    /* OFFERS */
+    #under-cover {
+        flex-direction: column;
+        margin-top: -100px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #offers { flex: none; width: 100%; }
+
+    #offers .offers-box {
+        width: 100%;
+        height: auto;
+        padding: 15px 10px;
+        border-radius: 20px;
+    }
+
+    #right-column {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #rules {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* POPULAR */
+    #popular-part {
+        transform: none;
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    .rectangle {
+        width: 80px;
+        height: 140px;
+        margin-right: 8px;
+        border-radius: 15px;
+    }
+
+    #gallery {
+        position: static !important;
+        transform: none !important;
+        margin-top: 15px;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .first-box, .second-box {
+        width: 100% !important;
+        height: 110px;
+    }
+
+    h6 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+    /* PRODUCTS - reset all transforms */
+    #promotions {
+        padding: 10px;
+    }
+
+    #prom1, #prom2, #prom3, #prom4, #prom5 {
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    #prom1 h1, #prom2 h1, #prom3 h1, #prom4 h1, #prom5 h1 {
+        font-size: 22px !important;
+        transform: none !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 8px;
+    }
+
+    #prom1 p, #prom2 p, #prom3 p, #prom4 p, #prom5 p {
+        transform: none !important;
+        width: 100% !important;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    #box1, #box2, #box3, #box4, #box4-1, #box4-2, #box5 {
+        transform: none !important;
+        width: 100% !important;
+        height: 120px !important;
+        margin: 8px 0 !important;
+        border-radius: 15px !important;
+    }
+
+    #prom1 .but1, #prom2 .but2,
+    #prom3 .but3, #prom4 .but4,
+    #prom5 .but5 {
+        transform: none !important;
+        margin-top: 0 !important;
+    }
+
+    .button-group {
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    .buttons a {
+        width: 100px;
+        height: 45px;
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    /* SOCIALS */
+    #social-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    #social-list li a img {
+        width: 65px;
+        height: 65px;
+    }
+
+    #socials h1 {
+        font-size: 20px;
+        transform: none;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #socials .p {
+        width: 100%;
+        transform: none;
+        font-size: 12px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    /* LOCATION */
+    #location {
+        width: 95%;
+        height: auto;
+        padding: 12px;
+        margin-top: 20px;
+    }
+
+    #loc-small-box {
+        width: 100px;
+        transform: none;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    #loc-big-box {
+        width: 100%;
+        height: 90px;
+        margin-top: 8px;
+    }
+
+    /* SOLO SOCIALS */
+    #solo-social-list {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #solo-social-list li a img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* MORE INFO */
+    #more-info ul a { font-size: 18px; }
+    .info::after { width: 160px; }
+
+    /* LOGO2 */
+    #logo2 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* LAST PART */
+    #last-part {
+        font-size: 12px;
+        gap: 8px;
+        padding-bottom: 20px;
+    }
+
+    /* CHAT */
+    .chat-box {
+        width: 95vw;
+        height: 75vh;
+        border-radius: 20px;
+    }
+
+    /* PANELS */
+    #profile-panel { width: 75%; left: -75%; }
+    #side-panel { width: 65%; right: -65%; }
+}
+
+
+
+
+/*CREATE POP-UP*/
+/* ====== CREATE POPUP STYLES ====== */
+
+#create-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#create-popup.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#create-box {
+    background-color: #fff5f8;
+    border-radius: 30px;
+    width: 600px;
+    max-width: 95vw;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transform: scale(0.92) translateY(20px);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 20px 60px rgba(240, 120, 160, 0.35);
+}
+
+#create-popup.active #create-box {
+    transform: scale(1) translateY(0);
+}
+
+#create-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#create-header h2 {
+    font-family: 'Architects Daughter', cursive;
+    color: #F096AE;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#create-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #F096AE;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#create-close:hover {
+    background-color: #fce4ec;
+    transform: scale(1.1);
+}
+
+#create-main {
+    display: flex;
+    gap: 14px;
+    align-items: stretch;
+}
+
+#layers-panel {
+    background-color: #fde8ef;
+    border-radius: 20px;
+    padding: 14px 12px;
+    width: 130px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#layers-panel h4 {
+    font-family: 'Architects Daughter', cursive;
+    color: #e07090;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.layer-item {
+    background-color: white;
+    border-radius: 10px;
+    height: 36px;
+    border: 2px solid #f4c0d0;
+    transition: border-color 0.2s;
+    cursor: pointer;
+}
+
+.layer-item:hover { border-color: #F096AE; }
+
+.layer-active {
+    background-color: #fde8ef;
+    border: 2px solid #F096AE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 10px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #e07090;
+    font-weight: 700;
+}
+
+.layer-active .layer-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #F096AE;
+}
+
+#preview-area {
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    border: 2.5px dashed #f4c0d0;
+    position: relative;
+    overflow: hidden;
+}
+
+#preview-character {
+    font-size: 100px;
+    line-height: 1;
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 4px 10px rgba(240,100,140,0.2));
+    user-select: none;
+    cursor: pointer;
+}
+
+#preview-sticker {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+#stickers-panel {
+    background-color: #fde8ef;
+    border-radius: 20px;
+    padding: 14px 12px;
+    width: 130px;
+    flex-shrink: 0;
+}
+
+#stickers-panel h4 {
+    font-family: 'Architects Daughter', cursive;
+    color: #e07090;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#sticker-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.sticker-btn {
+    background-color: white;
+    border: 2px solid #f4c0d0;
+    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 1;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.sticker-btn:hover { transform: scale(1.15); border-color: #F096AE; }
+.sticker-btn.selected { border-color: #ce6183; background-color: #fde8ef; }
+
+#category-tabs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cat-tab {
+    background-color: white;
+    border: 2px solid #f4c0d0;
+    border-radius: 30px;
+    padding: 8px 28px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 15px;
+    color: #d08090;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.cat-tab.active, .cat-tab:hover {
+    background-color: #F096AE;
+    color: white;
+    border-color: #F096AE;
+    transform: scale(1.04);
+}
+
+#color-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.arrow-btn {
+    background-color: white;
+    border: 2px solid #f4c0d0;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    color: #F096AE;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.arrow-btn:hover { background-color: #F096AE; color: white; transform: scale(1.1); }
+
+#color-dots { display: flex; gap: 8px; align-items: center; }
+
+.color-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.color-dot:hover { transform: scale(1.2); }
+.color-dot.selected { border-color: #ce6183; transform: scale(1.15); }
+
+#create-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+#reset-btn {
+    background-color: white;
+    border: 2px solid #f4c0d0;
+    border-radius: 30px;
+    padding: 10px 28px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: #d08090;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#reset-btn:hover { background-color: #fce4ec; transform: scale(1.04); }
+
+#request-btn {
+    background-color: #F096AE;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 36px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(240, 120, 160, 0.4);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#request-btn:hover { background-color: #ce6183; transform: scale(1.04); }
+
+
+#upload-zone {
+    background-color: white;
+    border: 2px dashed #f4c0d0;
+    border-radius: 14px;
+    width: 100%;
+    padding: 14px 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+#upload-zone:hover {
+    border-color: #F096AE;
+    background-color: #fff0f4;
+}
+
+#upload-zone span { font-size: 26px; display: block; }
+
+#upload-zone p {
+    font-size: 11px;
+    color: #d08090;
+    font-family: 'Architects Daughter', cursive;
+    margin-top: 4px;
+}
+
+#uploaded-thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.thumb-btn {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    border: 2px solid #f4c0d0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+    background: none;
+    padding: 0;
+}
+
+.thumb-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.thumb-btn:hover { border-color: #F096AE; transform: scale(1.08); }
+.thumb-btn.selected { border-color: #ce6183; }
+
+#preview-character img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(240, 100, 140, 0.25);
+}
+
+
+/* POP_UP FOR BUY BUTTONS */
+
+/* BUY POPUP */
+#buy-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#buy-popup.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#buy-box {
+    background-color: #fff5f8;
+    border-radius: 30px;
+    width: 420px;
+    max-width: 95vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    transform: scale(0.92) translateY(20px);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 20px 60px rgba(240, 120, 160, 0.35);
+}
+
+#buy-popup.active #buy-box {
+    transform: scale(1) translateY(0);
+}
+
+#buy-box-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#buy-box-header h2 {
+    font-family: 'Architects Daughter', cursive;
+    color: #F096AE;
+    font-size: 20px;
+}
+
+#buy-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #F096AE;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#buy-close:hover {
+    background-color: #fce4ec;
+    transform: scale(1.1);
+}
+
+#buy-product-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(240, 100, 140, 0.25);
+}
+
+#buy-product-name {
+    font-family: 'Permanent Marker', cursive;
+    color: #F096AE;
+    font-size: 22px;
+    text-align: center;
+}
+
+#buy-product-price {
+    font-family: 'Architects Daughter', cursive;
+    color: #ce6183;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#buy-confirm-btn {
+    background-color: #F096AE;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(240, 120, 160, 0.4);
+    transition: background-color 0.2s, transform 0.2s;
+    width: 100%;
+}
+
+#buy-confirm-btn:hover {
+    background-color: #ce6183;
+    transform: scale(1.04);
+}
+
+/* THANK YOU POPUP */
+#thankyou-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#thankyou-popup.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#thankyou-box {
+    background-color: #fff5f8;
+    border-radius: 30px;
+    width: 380px;
+    max-width: 95vw;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    transform: scale(0.92) translateY(20px);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 20px 60px rgba(240, 120, 160, 0.35);
+    text-align: center;
+}
+
+#thankyou-popup.active #thankyou-box {
+    transform: scale(1) translateY(0);
+}
+
+#thankyou-box span {
+    font-size: 60px;
+}
+
+#thankyou-box h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #F096AE;
+    font-size: 24px;
+}
+
+#thankyou-box p {
+    color: #ce6183;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 15px;
+}
+
+#thankyou-ok-btn {
+    background-color: #F096AE;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 36px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+    box-shadow: 0 4px 14px rgba(240, 120, 160, 0.4);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#thankyou-ok-btn:hover {
+    background-color: #ce6183;
+    transform: scale(1.04);
+}
+
+
+
+
+
+/* EDIT POPUP */
+#edit-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#edit-popup.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#edit-box {
+    background-color: #fff5f8;
+    border-radius: 30px;
+    width: 500px;
+    max-width: 95vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    transform: scale(0.92) translateY(20px);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 20px 60px rgba(240, 120, 160, 0.35);
+}
+
+#edit-popup.active #edit-box {
+    transform: scale(1) translateY(0);
+}
+
+#edit-box-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#edit-box-header h2 {
+    font-family: 'Architects Daughter', cursive;
+    color: #F096AE;
+    font-size: 20px;
+}
+
+#edit-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #F096AE;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#edit-close:hover {
+    background-color: #fce4ec;
+    transform: scale(1.1);
+}
+
+#edit-product-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(240, 100, 140, 0.25);
+}
+
+#edit-product-name-display {
+    font-family: 'Permanent Marker', cursive;
+    color: #F096AE;
+    font-size: 20px;
+    text-align: center;
+}
+
+.edit-label {
+    font-family: 'Architects Daughter', cursive;
+    color: #ce6183;
+    font-size: 14px;
+    align-self: flex-start;
+    margin-bottom: -10px;
+}
+
+.edit-input, .edit-textarea {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 20px;
+    border: 2px solid #f4c0d0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #F096AE;
+    outline: none;
+    background-color: white;
+    transition: border-color 0.2s ease;
+}
+
+.edit-input:focus, .edit-textarea:focus {
+    border-color: #F096AE;
+}
+
+.edit-input::placeholder, .edit-textarea::placeholder {
+    color: #f4b8c8;
+}
+
+.edit-textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+#edit-upload-zone {
+    width: 100%;
+    background-color: white;
+    border: 2px dashed #f4c0d0;
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 13px;
+    color: #d08090;
+}
+
+#edit-upload-zone:hover {
+    border-color: #F096AE;
+    background-color: #fff0f4;
+}
+
+.edit-btn-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-top: 4px;
+}
+
+#edit-done-btn {
+    flex: 1;
+    background-color: #F096AE;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(240, 120, 160, 0.4);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#edit-done-btn:hover {
+    background-color: #ce6183;
+    transform: scale(1.04);
+}
+
+#edit-request-btn {
+    flex: 1;
+    background-color: white;
+    border: 2px solid #F096AE;
+    border-radius: 30px;
+    padding: 12px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: #F096AE;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#edit-request-btn:hover {
+    background-color: #fce4ec;
+    transform: scale(1.04);
+}
+
+#edit-cancel-btn {
+    flex: 1;
+    background-color: white;
+    border: 2px solid #f4c0d0;
+    border-radius: 30px;
+    padding: 12px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: #d08090;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#edit-cancel-btn:hover {
+    background-color: #fce4ec;
+    transform: scale(1.04);
+}
+
+/* EDIT SUCCESS POPUP */
+#editsuccess-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#editsuccess-popup.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#editsuccess-box {
+    background-color: #fff5f8;
+    border-radius: 30px;
+    width: 380px;
+    max-width: 95vw;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    transform: scale(0.92) translateY(20px);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 20px 60px rgba(240, 120, 160, 0.35);
+    text-align: center;
+}
+
+#editsuccess-popup.active #editsuccess-box {
+    transform: scale(1) translateY(0);
+}
+
+#editsuccess-box span { font-size: 60px; }
+
+#editsuccess-box h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #F096AE;
+    font-size: 24px;
+}
+
+#editsuccess-box p {
+    color: #ce6183;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 15px;
+}
+
+#editsuccess-ok-btn {
+    background-color: #F096AE;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 36px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+    box-shadow: 0 4px 14px rgba(240, 120, 160, 0.4);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#editsuccess-ok-btn:hover {
+    background-color: #ce6183;
+    transform: scale(1.04);
+}
+
+/* REQUEST SUCCESS POPUP */
+#requestsuccess-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#requestsuccess-popup.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#requestsuccess-box {
+    background-color: #fff5f8;
+    border-radius: 30px;
+    width: 380px;
+    max-width: 95vw;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    transform: scale(0.92) translateY(20px);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 20px 60px rgba(240, 120, 160, 0.35);
+    text-align: center;
+}
+
+#requestsuccess-popup.active #requestsuccess-box {
+    transform: scale(1) translateY(0);
+}
+
+#requestsuccess-box span { font-size: 60px; }
+
+#requestsuccess-box h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #F096AE;
+    font-size: 24px;
+}
+
+#requestsuccess-box p {
+    color: #ce6183;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 15px;
+}
+
+#requestsuccess-ok-btn {
+    background-color: #F096AE;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 36px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+    box-shadow: 0 4px 14px rgba(240, 120, 160, 0.4);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#requestsuccess-ok-btn:hover {
+    background-color: #ce6183;
+    transform: scale(1.04);
+}
+
+
+    </style>
+
+</head>
+<a href="Top"></a>
+<div id="overall-container">
+
+    <div id="nav-wrapper"></div>
+
+<div id="profile-sec">
+    <div id="profile">
+        <img src="images/download (4).jpg" alt="profile pic">
+    </div>
+    <button id="profile-btn" onclick="openPopup()">
+        <p>Prince_Cairo</p>
+    </button>
+</div>
+
+    <!-- Profile Side-->
+<div id="profile-panel">
+    <button class="panel-close" onclick="closePopup()">✕</button>
+    <img src="images/download (4).jpg" alt="profile pic" class="popup-avatar">
+    <p id="profile-name">Prince_Cairo</p>
+    <div class="profile-panel-buttons">
+        <a href="#" class="panel-btn">🤍 Liked</a>
+        <a href="#" class="panel-btn">👤 Switch Account</a>
+        <a href="#" class="panel-btn logout" onclick="window.location.href='index.html'">🚪 Log out</a>
+    </div>
+</div>
+
+<div id="profile-overlay" onclick="closePopup()"></div>
+
+
+
+        <div id="menu" onclick="togglePanel()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="side-panel">
+            <button class="panel-close" onclick="closePanel()">✕</button>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#help">Help</a></li>
+            </ul>
+        </div>
+
+        <div id="panel-overlay" onclick="closePanel()"></div>
+
+
+
+
+<!-- Chat Popup HERE -->
+<div id="chat-popup" class="popup-overlay">
+    <div class="chat-box">
+        <div class="chat-header">
+            <img src="images/logo.jpg" alt="logo" class="chat-logo">
+            <div class="chat-header-info">
+                <h3>Sketches & Stitches</h3>
+                <span class="chat-status">● Online</span>
+            </div>
+            <button class="popup-close" onclick="closeChat()">✕</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="chat-bubble received">
+                <p>Hi! Welcome to Sketches & Stitches 🌸 How can we help you?</p>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="handleEnter(event)">
+            <button class="chat-send" onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- FOR CREATE POP-UP -->
+<div id="create-popup">
+    <div id="create-box">
+
+        <div id="create-header">
+            <h2>✨ Sketches &amp; Stitches</h2>
+            <button id="create-close" onclick="closeCreate()">✕</button>
+        </div>
+
+        <div id="create-main">
+            <div id="layers-panel">
+                <h4>Layers</h4>
+                <div class="layer-item"></div>
+                <div class="layer-item"></div>
+                <div class="layer-item"></div>
+                <div class="layer-active">
+                    <span>Layer 2</span>
+                    <span class="layer-dot"></span>
+                </div>
+                <div class="layer-active" style="background-color:white;">
+                    <span style="color:#bbb;">Layer 1</span>
+                    <span style="width:14px;height:14px;border-radius:50%;background-color:#ddd;display:inline-block;"></span>
+                </div>
+            </div>
+
+            <div id="preview-area">
+                <div id="preview-character">🍄</div>
+                <div id="preview-sticker"></div>
+            </div>
+
+            <div id="stickers-panel">
+                <h4>Upload Image</h4>
+                <label id="upload-label" for="img-upload">
+                <div id="upload-zone">
+                <span>📁</span>
+                <p>Click to upload</p>
+            </div>
+                </label>
+                <input type="file" id="img-upload" accept="image/*" style="display:none;" onchange="handleImageUpload(event)">
+                <div id="uploaded-thumbs"></div>
+            </div>
+        </div>
+
+        <div id="category-tabs">
+            <button class="cat-tab active" onclick="switchCategory(this, 'crochet')">Crochet</button>
+            <button class="cat-tab" onclick="switchCategory(this, 'drawings')">Drawings</button>
+        </div>
+
+        <div id="color-row">
+            <button class="arrow-btn" onclick="shiftColors(-1)">&#8249;</button>
+            <div id="color-dots"></div>
+            <button class="arrow-btn" onclick="shiftColors(1)">&#8250;</button>
+        </div>
+
+        <div id="create-actions">
+            <button id="reset-btn" onclick="resetCreate()">Reset</button>
+            <button id="request-btn" onclick="submitRequest()">Request ✦</button>
+        </div>
+
+    </div>
+</div>
+
+
+
+        <ul id="nav-buttons">
+            <li><a href="#Top">Home</a></li>
+            <li><a href="#" onclick="openCreate(); return false;">Create</a></li>
+            <li><a href="#" onclick="openChat()">Message</a></li>
+        </ul>
+
+
+<div id="white-bg">
+    <div id="first-container">
+
+        <div id="cover-part">
+            <img id="coverPic" src="images/cover.png" alt="cover">
+            <img id="logo1" src="images/logo.jpg" alt="logo photo">
+        </div>
+    </div>
+
+    <div id="under-cover">
+        <div id="offers">
+            <div class="offers-box">
+                <h5>OFFERS:</h5>
+                <ul>
+                    <li class="offer-topics">🍥CROCHET🍥
+                        <ul>
+                        <li class="offer-types">Keychain</li>
+                        <li class="offer-types">Amigurumi</li>
+                        <li class="offer-types">Bouquet</li>
+                        </ul>
+                    </li>
+
+                    <li class="offer-topics">🍥TRADITIONAL DRAWING🍥
+                        <ul>
+                        <li class="offer-types">portrait</li>
+                        <li class="offer-types">painting</li>
+                        <li class="offer-types">doodle</li>
+                        </ul>
+                    </li>
+
+                    <li class="offer-topics">🍥DIGITAL🍥
+                        <ul>
+                        <li class="offer-types">character drawing</li>
+                        <li class="offer-types">portrait</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <div id="right-column">
+
+        <div id="rules">
+            <h4>RULES</h4>
+            <p>All commissions require a 50% non refundable deposit and finalized designs before work 
+                begins. The artists have the rights to decline requests, retain all copyright, and prohibit the use
+                for AI training. Due to the custom nature of crochet and art, all sales are final with no returns.
+                To ensure a clear record of agreement, all official business and transactions must be conducted
+                exclusively through email or website.
+            </p>
+
+            <h3>REGULATIONS</h3>
+            <p>We prioritize your safety and privacy. All personal data is handled securely under Data Privacy
+            laws and is never shared with thirds parties. By using this site, you agree to provide truthful Information
+            and respect our intellectual property. We comply with all Consumer Protection standards, ensuring you receive
+            the service promised while keeping your transactins safe and secure.
+            </p>
+        </div>
+
+    </div>
+    </div>
+
+<!--first part ends here-->
+
+<div id="popular-part">
+    <h3>POPULAR!</h3>
+    <div>
+        <div class="rectangle">
+            <img src="images/1.jpg" alt="Popular">
+            <div class="rect-overlay">
+                <p>Flower Bouquet</p>
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <img src="images/18.jpg" alt="Popular">
+            <div class="rect-overlay">
+                <p>Snoopy Amigurumi</p>
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <img src="images/52.png" alt="Popular">
+            <div class="rect-overlay">
+                <p>Group Doodle</p>
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <img src="images/25.png" alt="Popular">
+                <div class="rect-overlay">
+                <p>Digi Art</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery">
+    <div class="first-box" onclick="window.location.href='s&s_gallery.html'">
+            <img src="images/11.jpg" alt="item1">
+            <img src="images/14.jpg" alt="item2">
+            <a href="" style="margin-left: 27px; font-size: 100px; color: white; text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);"> > </a>
+        <div class="gallery-overlay">
+            <p>View Crochet Collection</p>
+        </div>
+    </div>
+
+    <div class="second-box" onclick="window.location.href='s&s_gallery(art).html'">
+            <img src="images/36.png" alt="item1">
+            <img src="images/26.png" alt="item2">
+            <a href="" style="margin-left: 27px; font-size: 100px; color: white; text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);"> > </a>
+        <div class="gallery-overlay">
+            <p>View Drawing Collection</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+<h6>Timeless Gifts, Handcrafted for You.
+</h6>
+
+<div id="promotions">
+
+    <div id="prom1">
+        <div id="block1-PI">
+            <h1>SUNDROP FLOWER</h1>
+            <p>Skip the wilting petals and choose a gift that blooms year-round. This Handcrafted
+                Sundrop is meticuously stitched to bring a pop of sunshine to any desk or table.
+                Perfect for birthday gifts, anniversaries, or just because!<br>
+                <br>
+                -Handmade with love.<br>
+                -DM to order yours!</p>
+        </div>
+
+        <div class="boxes" id="box1"><img src="images/6.jpg" alt="Product1"></div>
+
+        <div class="button-group">
+            <div class="buttons but1"><a href="#" onclick="openEdit('images/6.jpg', 'SUNDROP FLOWER', 'Skip the wilting petals...'); return false;">edit</a></div>
+            <div class="buttons but1"><a href="#" onclick="openBuy('images/6.jpg', 'SUNDROP FLOWER', '₱299.00'); return false;">buy</a></div>
+        </div>
+    </div>
+
+    <div id="prom2">
+        <div id="block2-PI">
+            <h1>SINGLE SERENADE</h1>
+            <p>Why settle for a bouquet that lasts a week when you can have one that lasts a lifetime? Our hand-stitched crochet bouquets are the perfect blend of elegance and craftsmanship. No water, no wilting—just pure, handmade beauty.
+                <br><br>​🎁 Perfect for: Graduations, Anniversaries, and Home Decor.
+            </p>        </div>
+
+        <div class="boxes" id="box2"><img src="images/4.jpg" alt="Product2"></div>
+        <div class="button-group">
+            <div class="buttons but2"><a href="#" onclick="openEdit('images/4.jpg', 'SINGLE SERENADE', 'Why settle for a bouquet...'); return false;">edit</a></div>
+            <div class="buttons but2"><a href="#" onclick="openBuy('images/4.jpg', 'SINGLE SERENADE', '₱249.00'); return false;">buy</a></div>
+        </div>
+    </div>
+
+        <div id="prom3">
+        <div id="block3-PI">
+            <h1>LILY OF THE VALLEY</h1>
+            <p>Add a touch of handmade elegance to your everyday essentials! Our Lily of the Valley keychains are the perfect "little something" for your bag, keys, or rearview mirror. Compact, cute, and crafted with care.
+​<br><br>🌷 Symbolizing luck and happiness.</p>        </div>
+
+        <div class="boxes" id="box3"><img src="images/7.jpg" alt="Product3"></div>
+        <div class="button-group">
+            <div class="buttons but3"><a href="#" onclick="openEdit('images/7.jpg', 'LILY OF THE VALLEY', 'Add a touch of handmade elegance...'); return false;">edit</a></div>
+            <div class="buttons but3"><a href="#" onclick="openBuy('images/7.jpg', 'LILY OF THE VALLEY', '₱49.00'); return false;">buy</a></div>
+        </div>
+    </div>
+
+    <div id="prom4">
+        <div id="block4-PI">
+            <h1>AMIGURUMI SET</h1>
+            <p>Bringing your favorite characters to life, one stitch at a time! Whether you’re Team My Melody or Team Pompompurin, our high-quality amigurumi are the perfect companions for your desk, shelf, or bag.
+            </p>
+        </div>
+        <div class="boxes" id="box4"><img src="images/16.jpg" alt="Product4"></div>
+        <div class="boxes" id="box4-1"><img src="images/17.jpg" alt="Product4"></div>
+        <div class="boxes" id="box4-2"><img src="images/19.jpg" alt="Product4"></div>
+
+        <div class="button-group">
+            <div class="buttons but4"><a href="#" onclick="openEdit('images/16.jpg', 'AMIGURUMI SET', 'Bringing your favorite characters...'); return false;">edit</a></div>
+            <div class="buttons but4"><a href="#" onclick="openBuy('images/16.jpg', 'AMIGURUMI SET', '₱249.00'); return false;">buy</a></div>
+        </div>
+
+    </div>
+
+    <div id="prom5">
+        <div id="block5-PI">
+            <h1>ALCOHOL MARKER ART</h1>
+            <p>Capture your favorite moments (or your favorite characters!) in a way that digital filters simply can't. Our Custom Traditional Portraits are hand-rendered with a focus on "Color-Stories"—using specific palettes to evoke emotion and personality.</p>
+        </div>
+        <div class="boxes" id="box5"><img src="images/46.png" alt="Product5"></div>
+
+        <div class="button-group">
+            <div class="buttons but5"><a href="#" onclick="openEdit('images/46.png', 'ALCOHOL MARKER ART', 'Capture your favorite moments...'); return false;">edit</a></div>
+            <div class="buttons but5"><a href="#" onclick="openBuy('images/46.png', 'ALCOHOL MARKER ART', '₱599.00'); return false;">buy</a></div>
+        </div>
+
+    </div>
+    </div>
+<!--second part ends here-->
+
+</div>
+<div id="socials">
+    <ul id="social-list" type="none">
+        <li>
+        <a href="https://www.facebook.com/profile.php?id=61585872576642">
+            <img src="images/logo.jpg" alt="Facebook">
+            <p>Facebook</p>
+        </a>
+        </li>
+
+        <li>
+        <a href="#">
+            <img src="images/logo.jpg" alt="Instagram">
+            <p>Instagram</p>
+        </a>
+        </li>
+
+        <li>
+        <a href="#">
+            <img src="images/logo.jpg" alt="TikTok">
+            <p>Tiktok</p>
+        </a>
+        </li>
+    </ul>
+
+    <h1>Follow us!</h1>
+
+    <p class="p">goodness gracious. ikaw yung nag shoplift. you are the one
+        the one caught stealing on CCTV.
+    </p>
+</div>
+
+<div id="location">
+    <div id="loc-small-box">
+        <p>location</p>
+    </div>
+
+    <div id="loc-big-box">
+        <img src="images/location.webp" alt="magalang map">
+    </div>
+</div>
+
+<div>
+    <ul id="solo-social-list" type="none">
+        <li>
+    <a href="https://www.instagram.com/tintin.n_n?igsh=cnUyNG9jaHUyMjFo">
+        <img src="images/tin.jpg" alt="Kristine Ancheta">
+    </a>
+    <p class="member-name">Team Leader / Coder</p>
+</li>
+
+<li>
+    <a href="https://www.facebook.com/skyzsse">
+        <img src="images/tina.jpg" alt="Kristina Bulacso">
+    </a>
+    <p class="member-name">Layout Artist / Coder</p>
+</li>
+
+<li>
+    <a href="https://www.facebook.com/julius.dimarucut.9">
+        <img src="images/juls.gif" alt="Julius Dimarucut">
+    </a>
+    <p class="member-name">Layout Artist / Coder</p>
+</li>
+
+<li>
+    <a href="https://www.facebook.com/defnotlianvxl">
+        <img src="images/jel.jpg" alt="Jellian Baluyut">
+    </a>
+    <p class="member-name">Photo Editor / Coder</p>
+</li>
+
+<li>
+    <a href="https://www.facebook.com/Dyannemae">
+        <img src="images/dayan.jpg" alt="Dayan">
+    </a>
+    <p class="member-name">Data Collection / Photo Editing</p>
+</li>
+
+<li>
+    <a href="https://www.facebook.com/vanessa.santos.13099">
+        <img src="images/vane.jpg" alt="Vane">
+    </a>
+    <p class="member-name">Data Collection / Documentation</p>
+</li>
+    </ul>
+</div>
+
+<!-- <div id="more-info">
+    <ul type="none">
+        <a href="#contact" class="info"><li>Contacts</li></a>
+        <a href="#about" class="info"><li>About us</li></a>
+        <a href="#policy" class="info"><li>Privacy Policy</li></a>
+    </ul>
+</div> -->
+
+<div id="small-logo">
+    <div id="logo2">
+        <img src="images/logo.jpg" alt="logo">
+    </div>
+</div>
+
+<div id="last-part">
+    <p class="p1">By commissioning Sketches & Stitches, you confirm that you have read, understood, and agreed to the Terms and Conditions listed above.
+    </p>
+
+    <p class="P2">© Copyright</p>
+
+    <a href="#Top" id="back"><p>Back to Top</p></a>
+</div>
+
+<!-- buy button pop-up -->
+<div id="buy-popup">
+    <div id="buy-box">
+        <div id="buy-box-header">
+            <h2>🌸 Place your Order</h2>
+            <button id="buy-close" onclick="closeBuy()">✕</button>
+        </div>
+        <img id="buy-product-img" src="" alt="Product">
+        <p id="buy-product-name"></p>
+        <p id="buy-product-price"></p>
+        <button id="buy-confirm-btn" onclick="confirmPurchase()">Purchase 🌻</button>
+    </div>
+</div>
+
+<!-- THANK YOU POPUP -->
+<div id="thankyou-popup">
+    <div id="thankyou-box">
+        <span>🌸</span>
+        <h2>THANK YOU FOR PURCHASING!!!</h2>
+        <p>We'll reach out to you soon to confirm your order.</p>
+        <button id="thankyou-ok-btn" onclick="closeThankyou()">Yay! ✦</button>
+    </div>
+</div>
+
+
+
+
+
+<!-- EDIT POPUP -->
+<div id="edit-popup">
+    <div id="edit-box">
+        <div id="edit-box-header">
+            <h2>✏️ Edit Product</h2>
+            <button id="edit-close" onclick="closeEdit()">✕</button>
+        </div>
+        <img id="edit-product-img" src="" alt="Product">
+        <p id="edit-product-name-display"></p>
+
+        <span class="edit-label">Product Name</span>
+        <input class="edit-input" id="edit-name-input" type="text" placeholder="Enter product name...">
+
+        <span class="edit-label">Description</span>
+        <textarea class="edit-textarea" id="edit-desc-input" placeholder="Enter product description..."></textarea>
+
+        <span class="edit-label">Change Image</span>
+        <label for="edit-img-upload">
+            <div id="edit-upload-zone">📁 Click to upload new image</div>
+        </label>
+        <input type="file" id="edit-img-upload" accept="image/*" style="display:none;" onchange="handleEditImageUpload(event)">
+
+        <div class="edit-btn-row">
+            <button id="edit-done-btn" onclick="editDone()">Done ✦</button>
+            <button id="edit-request-btn" onclick="editRequest()">Request Creation 🌸</button>
+            <button id="edit-cancel-btn" onclick="closeEdit()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- EDIT SUCCESS POPUP -->
+<div id="editsuccess-popup">
+    <div id="editsuccess-box">
+        <span>✅</span>
+        <h2>EDIT SUCCESS!!!</h2>
+        <p>Your changes have been saved.</p>
+        <button id="editsuccess-ok-btn" onclick="closeEditSuccess()">OK ✦</button>
+    </div>
+</div>
+
+<!-- REQUEST SUCCESS POPUP -->
+<div id="requestsuccess-popup">
+    <div id="requestsuccess-box">
+        <span>🌸</span>
+        <h2>REQUEST SUCCESS!!!</h2>
+        <p>We received your creation request. We'll get back to you soon!</p>
+        <button id="requestsuccess-ok-btn" onclick="closeRequestSuccess()">Yay! ✦</button>
+    </div>
+</div>
+
+
+
+</div>
+
+</body>
+
+<script>
+
+function togglePanel() {
+    document.getElementById('side-panel').classList.toggle('open');
+    document.getElementById('panel-overlay').classList.toggle('active');
+}
+
+function closePanel() {
+    document.getElementById('side-panel').classList.remove('open');
+    document.getElementById('panel-overlay').classList.remove('active');
+}
+
+function openPopup() {
+    document.getElementById('profile-panel').classList.add('open');
+    document.getElementById('profile-overlay').classList.add('active');
+}
+function closePopup() {
+    document.getElementById('profile-panel').classList.remove('open');
+    document.getElementById('profile-overlay').classList.remove('active');
+}
+
+function openChat() {
+    document.getElementById('chat-popup').classList.add('active');
+}
+
+function closeChat() {
+    document.getElementById('chat-popup').classList.remove('active');
+}
+
+function sendMessage() {
+    const input = document.getElementById('chat-input');
+    const messages = document.getElementById('chat-messages');
+    const text = input.value.trim();
+    if (text === '') return;
+
+    const userBubble = document.createElement('div');
+    userBubble.className = 'chat-bubble sent';
+    userBubble.innerHTML = '<p>' + text + '</p>';
+    messages.appendChild(userBubble);
+    input.value = '';
+    messages.scrollTop = messages.scrollHeight;
+
+    setTimeout(function() {
+        const replyBubble = document.createElement('div');
+        replyBubble.className = 'chat-bubble received';
+        replyBubble.innerHTML = '<p>Thank you for your message! We will get back to you soon 🌸</p>';
+        messages.appendChild(replyBubble);
+        messages.scrollTop = messages.scrollHeight;
+    }, 1000);
+}
+
+function handleEnter(event) {
+    if (event.key === 'Enter') sendMessage();
+}
+
+
+
+
+
+/* ====== CREATE POPUP ====== */
+
+// Image paths per category — update these to match your actual filenames
+const crochetImages = [
+    'crochet-sticker/crochet1.png',
+    'crochet-sticker/crochet2.png',
+    'crochet-sticker/crochet3.png',
+    'crochet-sticker/crochet4.png',
+    'crochet-sticker/crochet5.png',
+    'crochet-sticker/crochet6.png',
+    'crochet-sticker/crochet7.png',
+    'crochet-sticker/crochet8.png',
+    'crochet-sticker/crochet9.png',
+
+
+];
+
+const drawingImages = [
+    'images/25.png',
+    'images/26.png',
+    'images/27.png',
+    'images/28.png',
+    'images/28.png',
+    'images/30.png',
+    'images/31.png',
+    'images/32.png'
+];
+
+let colorOffset = 0;
+let selectedCharIdx = 0;
+let currentCategory = 'crochet';
+let uploadedImages = [];
+
+function getImages() {
+    return currentCategory === 'crochet' ? crochetImages : drawingImages;
+}
+
+function setPreview(src) {
+    const preview = document.getElementById('preview-character');
+    preview.innerHTML = `<img src="${src}" alt="preview" style="width:130px;height:130px;object-fit:cover;border-radius:20px;box-shadow:0 4px 15px rgba(240,100,140,0.25);">`;
+}
+
+function renderColors() {
+    const container = document.getElementById('color-dots');
+    container.innerHTML = '';
+    const imgs = getImages();
+
+    for (let i = 0; i < 5; i++) {
+        const idx = (colorOffset + i) % imgs.length;
+        const dot = document.createElement('div');
+        dot.style.cssText = `
+            width: 44px; height: 44px; border-radius: 50%; overflow: hidden;
+            cursor: pointer; flex-shrink: 0; transition: transform 0.2s, border-color 0.2s;
+            border: ${idx === selectedCharIdx ? '3px solid #ce6183' : '2px solid #f4c0d0'};
+        `;
+
+        const img = document.createElement('img');
+        img.src = imgs[idx];
+        img.style.cssText = 'width:100%; height:100%; object-fit:cover; display:block;';
+        dot.appendChild(img);
+
+        dot.onmouseenter = () => dot.style.transform = 'scale(1.15)';
+        dot.onmouseleave = () => dot.style.transform = 'scale(1)';
+        dot.onclick = (function(ci) {
+            return function() {
+                selectedCharIdx = ci;
+                setPreview(imgs[ci]);
+                renderColors();
+            };
+        })(idx);
+
+        container.appendChild(dot);
+    }
+}
+
+function shiftColors(dir) {
+    const imgs = getImages();
+    colorOffset = (colorOffset + dir + imgs.length) % imgs.length;
+    renderColors();
+}
+
+function switchCategory(btn, cat) {
+    document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    currentCategory = cat;
+    selectedCharIdx = 0;
+    colorOffset = 0;
+    setPreview(getImages()[0]);
+    renderColors();
+}
+
+function handleImageUpload(event) {
+    const files = Array.from(event.target.files);
+    files.forEach(file => {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const src = e.target.result;
+            uploadedImages.push(src);
+
+            const thumbs = document.getElementById('uploaded-thumbs');
+            const btn = document.createElement('button');
+            btn.className = 'thumb-btn';
+            btn.innerHTML = `<img src="${src}" alt="upload">`;
+            btn.onclick = (function(s, b) {
+                return function() {
+                    document.querySelectorAll('.thumb-btn').forEach(t => t.classList.remove('selected'));
+                    b.classList.add('selected');
+                    setPreview(s);
+                };
+            })(src, btn);
+            thumbs.appendChild(btn);
+        };
+        reader.readAsDataURL(file);
+    });
+    event.target.value = '';
+}
+
+function resetCreate() {
+    uploadedImages = [];
+    selectedCharIdx = 0;
+    colorOffset = 0;
+    currentCategory = 'crochet';
+    document.getElementById('uploaded-thumbs').innerHTML = '';
+    document.getElementById('preview-area').style.backgroundColor = 'white';
+    document.getElementById('preview-sticker').textContent = '';
+    document.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('selected'));
+    document.querySelectorAll('.cat-tab').forEach((t, i) => t.classList.toggle('active', i === 0));
+    setPreview(crochetImages[0]);
+    renderColors();
+}
+
+function submitRequest() {
+    alert('🌸 Commission Request Sent!\n\nCategory: ' + currentCategory + '\n\nWe\'ll reach out soon!');
+    closeCreate();
+}
+
+function openCreate() {
+    document.getElementById('create-popup').classList.add('active');
+}
+
+function closeCreate() {
+    document.getElementById('create-popup').classList.remove('active');
+}
+
+document.getElementById('create-popup').addEventListener('click', function(e) {
+    if (e.target === this) closeCreate();
+});
+
+// Initialize
+setPreview(crochetImages[0]);
+renderColors();
+
+
+
+
+
+// POP-UP FOR BUY
+function openBuy(img, name, price) {
+    document.getElementById('buy-product-img').src = img;
+    document.getElementById('buy-product-name').textContent = name;
+    document.getElementById('buy-product-price').textContent = price;
+    document.getElementById('buy-popup').classList.add('active');
+}
+
+function closeBuy() {
+    document.getElementById('buy-popup').classList.remove('active');
+}
+
+function confirmPurchase() {
+    closeBuy();
+    document.getElementById('thankyou-popup').classList.add('active');
+}
+
+function closeThankyou() {
+    document.getElementById('thankyou-popup').classList.remove('active');
+}
+
+document.getElementById('buy-popup').addEventListener('click', function(e) {
+    if (e.target === this) closeBuy();
+});
+
+document.getElementById('thankyou-popup').addEventListener('click', function(e) {
+    if (e.target === this) closeThankyou();
+});
+
+
+
+
+
+
+// EDIT POPUP
+function openEdit(img, name, desc) {
+    document.getElementById('edit-product-img').src = img;
+    document.getElementById('edit-product-name-display').textContent = name;
+    document.getElementById('edit-name-input').value = name;
+    document.getElementById('edit-desc-input').value = desc;
+    document.getElementById('edit-popup').classList.add('active');
+}
+
+function closeEdit() {
+    document.getElementById('edit-popup').classList.remove('active');
+}
+
+function handleEditImageUpload(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        document.getElementById('edit-product-img').src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+    event.target.value = '';
+}
+
+function editDone() {
+    closeEdit();
+    document.getElementById('editsuccess-popup').classList.add('active');
+}
+
+function closeEditSuccess() {
+    document.getElementById('editsuccess-popup').classList.remove('active');
+}
+
+function editRequest() {
+    closeEdit();
+    document.getElementById('requestsuccess-popup').classList.add('active');
+}
+
+function closeRequestSuccess() {
+    document.getElementById('requestsuccess-popup').classList.remove('active');
+}
+
+document.getElementById('edit-popup').addEventListener('click', function(e) {
+    if (e.target === this) closeEdit();
+});
+
+document.getElementById('editsuccess-popup').addEventListener('click', function(e) {
+    if (e.target === this) closeEditSuccess();
+});
+
+document.getElementById('requestsuccess-popup').addEventListener('click', function(e) {
+    if (e.target === this) closeRequestSuccess();
+});
+
+</script>
+
+</html>
